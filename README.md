@@ -1,59 +1,86 @@
-# WtsCalendarAngularExample
+# WTS Calendar Angular example
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.1.3.
+A complete Angular 22 example for the official [`@wts-calendar/angular`](https://www.npmjs.com/package/@wts-calendar/angular) adapter and framework-agnostic [`@wts-calendar/core`](https://www.npmjs.com/package/@wts-calendar/core) package.
 
-## Development server
+The example demonstrates:
 
-To start a local development server, run:
+- standalone Angular component integration;
+- controller-driven date navigation and view switching;
+- reactive event and option inputs;
+- live theme and weekend controls;
+- date and event click callbacks;
+- lifecycle-safe calendar ownership through the Angular adapter.
 
-```bash
-ng serve
-```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Run locally
 
 ```bash
-ng generate component component-name
+npm install
+npm start
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Open `http://localhost:4200`.
+
+## Production build
 
 ```bash
-ng generate --help
+npm run build
 ```
 
-## Building
-
-To build the project run:
+## Test
 
 ```bash
-ng build
+npm test -- --watch=false
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## Minimal integration
 
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+Install both published packages:
 
 ```bash
-ng test
+npm install @wts-calendar/core @wts-calendar/angular
 ```
 
-## Running end-to-end tests
+Import the adapter in a standalone Angular component:
 
-For end-to-end (e2e) testing, run:
+```ts
+import { Component } from '@angular/core';
+import { WtsCalendarAngularComponent } from '@wts-calendar/angular';
+import type { CalendarEventInput } from '@wts-calendar/core';
 
-```bash
-ng e2e
+@Component({
+  selector: 'app-calendar',
+  imports: [WtsCalendarAngularComponent],
+  template: `
+    <wts-calendar-angular
+      [initialOptions]="{ view: 'month', viewDate: '2026-08-01' }"
+      [events]="events"
+    />
+  `,
+})
+export class CalendarExample {
+  readonly events: readonly CalendarEventInput[] = [
+    {
+      id: 'planning',
+      title: 'Planning',
+      start: '2026-08-04T10:00:00',
+      end: '2026-08-04T11:00:00',
+    },
+  ];
+}
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Import the production stylesheet once in the application’s global styles:
 
-## Additional Resources
+```scss
+@import '@wts-calendar/core/styles/calendar.css';
+```
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Packages
+
+- `@wts-calendar/angular` `1.0.0`
+- `@wts-calendar/core` `1.0.0`
+- Angular `22`
+
+## License
+
+MIT
