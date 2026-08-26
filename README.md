@@ -75,6 +75,15 @@ Import the production stylesheet once in the application’s global styles:
 @import '@wts-calendar/core/styles/calendar.css';
 ```
 
+## Package documentation
+
+The repository includes a local copy of every Markdown document from the Angular adapter and core package sources. Their original relative structure is preserved so links from the package READMEs continue to work.
+
+- [Complete documentation index](package-docs/README.md)
+- [Angular adapter README](package-docs/angular/README.md)
+- [Core package README](package-docs/core/README.md)
+- [Core guides](package-docs/core/docs)
+
 ## Packages
 
 - `@wts-calendar/angular` `1.0.0`

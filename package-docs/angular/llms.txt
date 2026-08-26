@@ -1,0 +1,12 @@
+# WTS Calendar Angular
+
+> `@wts-calendar/angular` is the official standalone Angular 17-22 wrapper for `@wts-calendar/core`.
+
+Import `WtsCalendarAngularComponent` into the host component. Pass construction-only values through `initialOptions` and `calendarFactory`, live changes through `options`, and collections through `events` and `resources`. Use `(ready)` or `getApi()`; do not construct a second `WtsCalendar`. The wrapper skips DOM construction during SSR.
+
+## Documentation
+
+- [Angular wrapper README](https://github.com/Suman201/angular-librerias-v-17/blob/main/projects/wts-calendar-angular/README.md): standalone component, signals, SSR, and lifecycle
+- [Core llms.txt](https://github.com/Suman201/angular-librerias-v-17/blob/main/projects/calendar/llms.txt): complete calendar documentation map
+- [AI integration guide](https://github.com/Suman201/angular-librerias-v-17/blob/main/projects/calendar/docs/LLM-INTEGRATION.md): safe generation constraints
+- [Credentials](https://github.com/Suman201/angular-librerias-v-17/blob/main/projects/calendar/docs/CREDENTIALS.md): API keys and OAuth safety
