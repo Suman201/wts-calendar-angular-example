@@ -5,7 +5,6 @@ This directory mirrors the Markdown documentation used by the two published pack
 ## Angular adapter
 
 - [Angular adapter README](angular/README.md)
-- [Angular adapter LLM map](angular/llms.txt)
 - [Angular adapter license](angular/LICENSE)
 
 ## Core package
@@ -16,7 +15,6 @@ This directory mirrors the Markdown documentation used by the two published pack
 - [Security policy](core/SECURITY.md)
 - [Support policy](core/SUPPORT.md)
 - [Third-party licenses](core/THIRD_PARTY_LICENSES.md)
-- [Core LLM map](core/llms.txt)
 - [Core license](core/LICENSE)
 
 ## Core guides
@@ -34,7 +32,6 @@ This directory mirrors the Markdown documentation used by the two published pack
 - [Enterprise workflow](core/docs/ENTERPRISE-WORKFLOW.md)
 - [Event editor](core/docs/EVENT-EDITOR.md)
 - [FullCalendar comparison](core/docs/FULLCALENDAR-COMPARISON.md)
-- [LLM integration](core/docs/LLM-INTEGRATION.md)
 - [Migration](core/docs/MIGRATION.md)
 - [Package structure](core/docs/PACKAGE-STRUCTURE.md)
 - [Performance](core/docs/PERFORMANCE.md)

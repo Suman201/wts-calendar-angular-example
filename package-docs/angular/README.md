@@ -6,9 +6,6 @@ The peer range describes API compatibility, not a security recommendation.
 Applications should use the newest patched Angular release supported by their
 major line and monitor Angular security advisories.
 
-AI-assisted integrations should start with [`llms.txt`](llms.txt) and the
-[core documentation map](https://github.com/Suman201/angular-librerias-v-17/blob/main/projects/calendar/llms.txt).
-
 ```html
 <wts-calendar-angular
   [initialOptions]="{ view: 'month', selectedDate: today }"

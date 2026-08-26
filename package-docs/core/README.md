@@ -2,10 +2,8 @@
 
 A framework-agnostic TypeScript calendar for event and resource scheduling.
 
-For code assistants and retrieval systems, [`llms.txt`](llms.txt) provides the
-curated documentation map and the [AI integration guide](docs/LLM-INTEGRATION.md)
-defines safe generation constraints. Provider credentials and API-key setup are
-documented separately in [API keys, OAuth, and browser credentials](docs/CREDENTIALS.md).
+Provider credentials and API-key setup are documented separately in
+[API keys, OAuth, and browser credentials](docs/CREDENTIALS.md).
 For paid modules, see [how to request and use a premium license](docs/PREMIUM-LICENSING.md).
 
 ## Install
