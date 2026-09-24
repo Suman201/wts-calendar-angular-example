@@ -19,14 +19,19 @@
 
   <section id="top" class="hero" aria-labelledby="page-title">
     <div class="hero-copy">
-      <p class="eyebrow"><span></span> Angular 22 calendar example</p>
-      <h1 id="page-title">A calmer way<br />to plan <em>what’s next.</em></h1>
+      <p class="eyebrow"><span></span> WTS Calendar Angular demo</p>
+      <h1 id="page-title" aria-label="Angular calendar component for modern scheduling apps">
+        <span>Angular calendar</span>
+        <span>component for</span>
+        <span>modern scheduling</span>
+        <span>apps</span>
+      </h1>
     </div>
     <aside class="hero-note">
       <span>01 / Overview</span>
       <p>
-        A production-minded example using the official Angular adapter for the framework-agnostic
-        WTS Calendar core.
+        A production-minded WTS Calendar Angular example using the official adapter for
+        framework-agnostic calendar scheduling.
       </p>
       <div class="package-line"><code>@wts-calendar/angular</code><strong>v1.0.0</strong></div>
     </aside>
@@ -39,8 +44,8 @@
         <h2 id="calendar-title">Studio schedule</h2>
       </div>
       <p>
-        Use the controls, select a day, or click any event. Every calendar surface is rendered by
-        the published package.
+        Explore month view, week view, and day view controls, then select days, events, and themes.
+        Every calendar surface is rendered by the published package.
       </p>
     </div>
 
@@ -133,8 +138,8 @@
       <span class="section-index">03 / Integration</span>
       <h2 id="integration-title">Angular owns the state.<br /><em>Core owns the calendar.</em></h2>
       <p>
-        The adapter keeps one calendar instance alive while Angular updates events and options
-        transactionally.
+        The adapter keeps one calendar instance alive while Angular updates events, views, and theme
+        options transactionally.
       </p>
     </div>
     <pre><code><span>&lt;wts-calendar-angular</span>
