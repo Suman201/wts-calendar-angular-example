@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import { existsSync, readFileSync } from 'node:fs';
 
 const productionUrl = 'https://wts-calendar.github.io/';
+const socialImageUrl = `${productionUrl}social-preview.png`;
 const expectedTitle = 'Angular Calendar Component Demo | WTS Calendar';
 const expectedDescription =
   'Explore a WTS Calendar Angular calendar component demo with month, week, and day views, events, themes, and developer-ready integration.';
@@ -20,7 +21,9 @@ assertIncludes(index, `<link rel="canonical" href="${productionUrl}" />`, 'canon
 assertIncludes(index, '<meta name="robots" content="index, follow, max-image-preview:large" />', 'robots meta');
 assertIncludes(index, '<meta property="og:type" content="website" />', 'Open Graph type');
 assertIncludes(index, `<meta property="og:url" content="${productionUrl}" />`, 'Open Graph URL');
+assertIncludes(index, `<meta property="og:image" content="${socialImageUrl}" />`, 'Open Graph image');
 assertIncludes(index, '<meta name="twitter:card" content="summary_large_image" />', 'Twitter card');
+assertIncludes(index, `<meta name="twitter:image" content="${socialImageUrl}" />`, 'Twitter image');
 assertIncludes(index, '<script type="application/ld+json">', 'JSON-LD script');
 
 const jsonLdMatch = index.match(
