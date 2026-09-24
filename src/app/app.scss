@@ -105,6 +105,10 @@ h1 {
   line-height: 0.83;
 }
 
+h1 span {
+  display: block;
+}
+
 h1 em,
 .integration h2 em {
   color: #176b62;
@@ -510,7 +514,10 @@ input:focus-visible {
   }
 
   h1 {
-    font-size: clamp(57px, 19vw, 95px);
+    overflow-wrap: break-word;
+    font-size: 44px;
+    letter-spacing: 0;
+    line-height: 0.95;
   }
 
   .workspace {
